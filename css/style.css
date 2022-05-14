@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FFD152;
+    color: #0F384B;
+   
+  }
+  .icon {
+      margin-left: 50px;
+      padding: 20px;
+  }
+  h1 {
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-family: 'Montserrat', sans-serif;
+      
+  }
+  h2 {
+      text-align: center;
+      color: #0F384B;
+      font-family: 'Montserrat', sans-serif;
+  }
+  h4 {
+      text-align: center;
+      color: #0F384B;
+      font-family: 'Montserrat', sans-serif;
+      
+  }
+  
+  .jogo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .forca {
+    fill: transparent;
+    stroke:#0F384B;
+    stroke-width: 6px;
+    stroke-linecap: round;
+  }
+  
+  .forca-parte {
+    display: none;
+  }
+  
+  
+  .letras-erradas-container {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .letras-erradas-container span {
+    margin: 0 2px;
+  }
+  
+  .palavra-secreta-container {
+    font-size: 45px;
+    text-align: center;
+    color: #F25F35;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .aviso-palavra-repetida {
+    background-color: #309E78;
+    border-radius: 10px 10px 0 0;
+    padding: 13px 20px;
+    position: absolute;
+    bottom: -65px;
+    transition: transform 0.3s ease-in-out;
+    color: #fff;
+    
+  }
+  
+  .aviso-palavra-repetida p {
+    margin: 0;
+  }
+  
+  .aviso-palavra-repetida.show {
+    transform: translateY(-50px);
+    
+  }
+  
+  .palavra-secreta-container span {
+    margin: 0 5px;
+  }
+  
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: #F9FFFD;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup button {
+    cursor: pointer;
+    background-color: #F9FFFD;
+    border: 2px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    
+  }
+
+  @media (max-width: 768px) {
+    .icon {
+        width: 20px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .aviso-palavra-repetida {
+      bottom: -130;
+    }
+}
+
+   @media (max-width: 375px) {
+    .aviso-palavra-repetida {
+      bottom: -300;
+      padding: 8px 13px;
+
+      
+    }
+    .palavra-secreta-container {
+      font-size: 30px;
+    }
+    
+   }
+   @media (max-width: 320px) {
+    .aviso-palavra-repetida {
+       position: relative;
+       bottom: -200px;
+
+    }
+    .palavra-secreta-container {
+      font-size: 20px;
+    }
+    
+   }
+  
