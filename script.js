@@ -4,6 +4,12 @@ const palavraSecreta =
 const letrasErradas = [];
 const letrasCorretas = [];
 
+document.querySelector(".fake-input").value = "";
+
+document.querySelector("html").addEventListener("click", () => {
+  document.querySelector(".fake-input").focus();
+});
+
 document.addEventListener("keydown", (evento) => {
   const codigo = evento.keyCode; // 65 - 90 (intervalo)
   if (isLetra(codigo)) {
@@ -54,11 +60,11 @@ function checarJogo() {
   const partesCorpo = document.querySelectorAll(".forca-parte");
 
   if (letrasErradas.length === partesCorpo.length) {
-    mensagem = "Fim de jogo! Você perdeu! &#x1F480";
+    mensagem = "Fim de jogo!<br> Você perdeu!<br> &#x1F480";
   }
 
   if (palavraSecreta === container.innerText) {
-    mensagem = "Parabéns! Você ganhou! &#x1F60E	";
+    mensagem = "Parabéns!<br> Você ganhou!<br> &#x1F60E	";
   }
 
   if (mensagem) {

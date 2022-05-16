@@ -39,7 +39,8 @@ body {
     border: none;
     color: transparent;
     background-color: transparent;
-    
+    width: 450;
+    height: 50px;
   }
   
   .jogo-container {
