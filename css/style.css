@@ -39,10 +39,7 @@ body {
     border: none;
     color: transparent;
     background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 1px;
-    height: 1px;
+    
   }
   
   .jogo-container {
