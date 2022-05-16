@@ -35,6 +35,15 @@ body {
       font-family: 'Montserrat', sans-serif;
       
   }
+  .fake_input {
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 1px;
+    height: 1px;
+  }
   
   .jogo-container {
     display: flex;
@@ -118,15 +127,20 @@ body {
   
   .popup button {
     cursor: pointer;
-    background-color: #F9FFFD;
+    background-color: #F25F35;
     border: 2px;
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 15px;
+    width: 200px;
+    color: #F9FFFD;
+    font-family: 'Montserrat', sans-serif;
+    
+
     
   }
-
+  
   @media (max-width: 768px) {
     .icon {
         width: 20px;

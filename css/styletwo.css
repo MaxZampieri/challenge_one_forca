@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    
+
+body {
+    background-color: #FFD152;
+}
+.icon-two {
+    margin-left: 50px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0F384B;
+}
+h2 {
+    text-align: center;
+    color: #0F384B;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.btn {
+    margin-top: 190px;
+    display:grid;
+    justify-content: center;
+}
+.btn-enter {
+width: 317px;
+height: 105px;
+left: 562px;
+top: 394px;
+padding: 24px;
+border-radius: 24px;
+background-color: #0F384B;
+color: #fff;
+border: none;
+cursor: pointer;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+}
+.btn-enter:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+.btn-exit {
+width: 317px;
+height: 105px;
+left: 562px;
+top: 394px;
+margin-top: 10px;
+padding: 24px;
+border-radius: 24px;
+background-color: #0F384B;
+color: #fff;
+border: none;
+cursor: pointer;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+}
+.btn-exit:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+
+@media (max-width: 425px) {
+    .icon-two {
+        width: 20px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .btn-exit {
+        width: 290px;
+        height: 100px;
+    }
+    .btn-enter {
+        width: 290px;
+        height: 100px;
+    }
+    .btn {
+        margin-top: 100px;
+        display:grid;
+        justify-content: center;
+}
+}
