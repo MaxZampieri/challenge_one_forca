@@ -36,11 +36,11 @@ body {
       
   }
   .fake-input {
-    border: none;
+    border: transparent;
     color: transparent;
     background-color: transparent;
-    width: 450;
-    height: 50px;
+    width: 1px;
+    height: 1px;
   }
   
   .jogo-container {
@@ -175,7 +175,7 @@ body {
 
     }
     .palavra-secreta-container {
-      font-size: 20px;
+      font-size: 30px;
     }
     
    }
