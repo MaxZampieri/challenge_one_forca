@@ -8,10 +8,19 @@ const palavraSecreta =
 const letrasErradas = [];
 const letrasCorretas = [];
 
+document.querySelector(".fake-input").value = "";
+
+
+document.querySelector("html").addEventListener("click", () => {
+  document.querySelector(".fake-input").focus();
+  
+  
+});
+
 
 
 document.addEventListener("keydown", (evento) => {
-  const codigo = evento.keyCode; // 65 - 90 (intervalo)
+  const codigo = event.keyCode; // 65 - 90 (intervalo)
   if (isLetra(codigo)) {
     const letra = evento.key.toUpperCase();
     if (letrasErradas.includes(letra)) {
