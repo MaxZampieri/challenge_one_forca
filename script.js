@@ -1,14 +1,14 @@
-const animais = ["MACACO", "GIRAFA", "cavalo", "CACHORRO", "GALINHA", "TUCANO", "CROCODILO"];
+const animais = ["MACACO", "GIRAFA", "CAVALO", "CACHORRO", "GALINHA", "TUCANO", "CROCODILO"];
+
 const palavraSecreta =
-  animais[Math.floor(Math.random() * animais.length)];
+  animais[Math.floor(Math.random() * animais.length)] 
+
+  
+ 
 const letrasErradas = [];
 const letrasCorretas = [];
 
-document.querySelector(".fake-input").value = "";
 
-document.querySelector("html").addEventListener("click", () => {
-  document.querySelector(".fake-input").focus();
-});
 
 document.addEventListener("keydown", (evento) => {
   const codigo = evento.keyCode; // 65 - 90 (intervalo)
@@ -46,6 +46,7 @@ function mostrarLetrasCertas() {
   const container = document.querySelector(".palavra-secreta-container");
   container.innerHTML = "";
   palavraSecreta.split("").forEach((letra) => {
+    
     if (letrasCorretas.includes(letra)) {
       container.innerHTML += `<span>${letra}</span>`;
     } else {
@@ -90,8 +91,10 @@ function mostrarAvisoLetraRepetida() {
 
 function isLetra(codigo) {
   return codigo >= 65 && codigo <= 90;
+  
 }
 
 function reiniciarJogo() {
   window.location.reload();
+  
 }
