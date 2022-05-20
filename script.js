@@ -3,8 +3,12 @@ const animais = ["MACACO", "GIRAFA", "CAVALO", "CACHORRO", "GALINHA", "TUCANO", 
 const palavraSecreta =
   animais[Math.floor(Math.random() * animais.length)] 
 
-  
+
+//Evento adicionar palavra//
+
  
+
+ //===============================================//
 const letrasErradas = [];
 const letrasCorretas = [];
 
@@ -20,7 +24,7 @@ document.querySelector("html").addEventListener("click", () => {
 
 
 document.addEventListener("keydown", (evento) => {
-  const codigo = event.keyCode; // 65 - 90 (intervalo)
+  const codigo = evento.keyCode; // 65 - 90 (intervalo)
   if (isLetra(codigo)) {
     const letra = evento.key.toUpperCase();
     if (letrasErradas.includes(letra)) {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
     
-
+/*Primeira página - entrar*/
 body {
     background-color: #FFD152;
 }
@@ -65,6 +65,54 @@ font-family: 'Montserrat', sans-serif;
     transform: scale(1.1);
     transition: all 0.5s;
 } 
+
+/*Adicionar palavra*/
+
+.adicionar {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.aviso-letras {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #F25F35;
+}
+.btn-add {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.adicionar-palavra {
+    width: 317px;
+    height: 105px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #0F384B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.adicionar-palavra:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+
+.add-word {
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 30px;
+    text-transform: uppercase;
+    color: #0F384B;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
 
 @media (max-width: 425px) {
     .icon-two {
