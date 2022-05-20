@@ -1,10 +1,8 @@
-const animais = ["MACACO", "GIRAFA", "CAVALO", "CACHORRO", "GALINHA", "TUCANO", "CROCODILO"];
+const animais = ["MACACO", "GIRAFA", "CAVALO", "CACHORRO", "GALINHA", "TUCANO", "CROCODILO", "PAPAGAIO", "AVESTRUZ", "RAPOSA", "TIGRE", "COBRA", "GORILA"];
 
 const palavraSecreta =
   animais[Math.floor(Math.random() * animais.length)] 
 
-
-//Evento adicionar palavra//
 
  
 
